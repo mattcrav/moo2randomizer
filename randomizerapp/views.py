@@ -7,4 +7,4 @@ import os
 def index(request):
     result = Result()
     context = {'result': result}
-    return HttpResponse(os.environ.get('SECRET_KEY'))
+    return render(request, 'randomizerapp/index.html', context)
