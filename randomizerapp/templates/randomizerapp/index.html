@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOO2 Randomizer</title>
+</head>
+<body>
+    <p>----NEW GAME----</p>
+    <p>{{ result.difficulty }}</p>
+    <p>{{ result.galaxy_size }}</p>
+    <p>{{ result.galaxy_age }}</p>
+    <p>{{ result.players }}</p>
+    <p>{{ result.tech_level }}</p>
+    <p>{{ result.tactical_combat }}</p>
+    <p>{{ result.random_events }}</p>
+    <p>{{ result.antarans_attack }}</p>
+    </br>
+    <p>---SELECT RACE---</p>
+    {% for pick in result.picks %}
+    <p>{{ pick }}</p>
+    {% endfor %}
+</body>
+</html>
